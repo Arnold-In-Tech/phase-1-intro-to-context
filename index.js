@@ -31,13 +31,10 @@ function createEmployeeRecord(array){
 
 function createEmployeeRecords(twoRows){
 
-    let employeeRecords = [];
-
-    for (array of twoRows){
-        employeeRecords.push(createEmployeeRecord(array));
-    }
+    let employeeRecords = twoRows.map(createEmployeeRecord)
     return employeeRecords;
 }
+// console.log(createEmployeeRecords(twoRows));
 // =========================================== //
 
 
